@@ -1,7 +1,7 @@
 
 variable "region" {
   description = "The AWS region to create resources in."
-  default     = "ap-south-1"
+  default     = "ap-southeast-1"
 }
 
 
@@ -30,7 +30,7 @@ variable "private_subnet_2_cidr" {
 variable "availability_zones" {
   description = "Availability zones"
   type        = list(string)
-  default     = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
+  default     = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }
 
 
@@ -45,7 +45,7 @@ variable "amis" {
   description = "Which AMI to spawn."
   default = {
     
-    ap-south-1 = "ami-0cca134ec43cf708f"    
+    ap-southeast-1 = "ami-0df7a207adb9748c7"    #ubuntu image
     
   }
 }
